@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    
+       <!-- manifest.json provides metadata used when your web app is installed on a 
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/ -->
+  
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Aztro-Bot Wep Page</title>
+  </head>
+  <body>
+          <!-- how do i return/display those tweets with my gettwitter function  -->
+          <!-- images aren't working -->
+    <div id="page-container">
+      <p id="title">Welcome to AztroTwitterBot's Official Web Page</p>
+      
+      <p id='recent'> Recent Tweets</p>
+      
+      <div class="tweet-holder" id="one">
+      </div>
+      <div class="tweet-holder" id="two">
+      </div>
+      <div class="tweet-holder" id="three">
+      </div>
+      <div class="tweet-holder" id="four">
+      </div>
+      <div class="tweet-holder" id="five">
+      </div>
+
+
+      <div id="for-images">
+        <img src="/images/aries.jpeg" alt="aries" class="astro-pic">
+        <img src="src/images/taurus.jpeg" alt="taurus" class="astro-pic">
+        <img src="images/gemini.jpeg" alt="gemini" class="astro-pic">
+        <img src="images/cancer.jpeg" alt="cancer" class="astro-pic">
+
+        <img src="images/leo.jpeg" alt="leo" class="astro-pic">
+        <img src="images/virgo.jpeg" alt="virgo" class="astro-pic">
+        <img src="images/libra.jpeg" alt="libra" class="astro-pic">
+        <img src="images/scorpio.jpeg" alt="scorpio" class="astro-pic">
+
+        <img src="images/saggitarius.jpeg" alt="saggitarius" class="astro-pic">
+        <img src="images/capricorn.jpeg" alt="capricorn" class="astro-pic">
+        <img src="images/aquarius.jpeg" alt="aquarius" class="astro-pic">
+        <img src="images/pisces.jpeg" alt="pisces" class="astro-pic">
+
+      </div>
+
+      <div>
+            <button onclick="testFunction()">  Test  </button>
+             Current Date: {this.state.json.current_date} <br /> 
+             Compatibility: {this.state.json.compatibility} <br />
+             Lucky Number: {this.state.json.lucky_number} <br />
+             Lucky Time: {this.state.json.lucky_time} <br />
+             Color: {this.state.json.color} <br />            
+          </div>
+    </div>
+    <!-- this root needs to be off in right corner for root section
+    set root's css to reflect that  -->
+    <!--  -->
+    <!-- <div id="form"></div> -->
+
+    <!-- results go here  -->
+    <!-- <div id="root"></div> -->
+
+  </body>
+</html>
